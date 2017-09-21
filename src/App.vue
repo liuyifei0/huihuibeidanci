@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <h1 class="text-green">hello feifei</h1>
     <hello></hello>
   </div>
 </template>
@@ -16,7 +17,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+	@import './assets/css/main.less';
+	.text-green{
+		color: @gray-lighter;
+	}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
